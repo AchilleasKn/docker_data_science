@@ -1,8 +1,11 @@
 # Docker for Data Science | Deep Learning
 
-Ready-to-run Docker image containing Jupyter applications and interactive computing tools.
+Ready-to-run Docker image containing Jupyter applications and interactive computing tools for Data Science and Deep Learning.
 
-The docker image comes with the following installed packages:
+![docker logo](https://www.docker.com/sites/default/files/vertical.png "Docker")
+
+## Specs
+The image is built on top of python 3.6 (docker image) and has these packages built into it. It comes with the following installed packages:
 
   - Python Version: 3.6 
   - Tensorflow - 1.7
@@ -18,9 +21,16 @@ The docker image comes with the following installed packages:
   - Jupyter Notebook (latest)
   - Pillow (latest)
 
+The following ports have been exposed:
+  - 8888 for Jupyter Notebook
+  - 6006 for [Tensor Board]
+  
+[Tensor Board]: <https://www.tensorflow.org/guide/summaries_and_tensorboard>
+
+
 It also comes with a collection of extensions that add functionality to the Jupyter notebook. For more information see [here].
 
-## How to run
+## Setup
 
   1. Install Docker CE ([Install])
   2. Pull the image `docker pull achilleaskn/docker_data_science`
